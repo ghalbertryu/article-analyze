@@ -1,13 +1,13 @@
-package org.albertryu.dictionary;
+package org.albertryu.article.analyze;
 
 import java.io.File;
 import java.io.IOException;
 
 
-import org.albertryu.dictionary.utils.Analyzer;
-import org.albertryu.dictionary.utils.DicSet;
+import org.albertryu.article.analyze.utils.Analyzer;
+import org.albertryu.article.analyze.utils.DicSet;
 
-public class DictionaryDemo {
+public class ArticleAnalyzeDemo {
 
 	public static void main(String[] args) throws IOException {
 		String dicPath = "./resources/dic.txt";
