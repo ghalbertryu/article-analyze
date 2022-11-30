@@ -1,4 +1,4 @@
-package dgx.albert.dicset;
+package org.albertryu.dictionary.utils;
 
 import java.util.HashSet;
 
