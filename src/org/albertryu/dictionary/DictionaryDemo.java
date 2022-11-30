@@ -14,14 +14,19 @@ public class DictionaryDemo {
 		String dicText = Analyzer.readArticle(new File(dicPath));
 		DicSet dicSet = new DicSet(dicText);
 		
-		String fileName = "article1";
-		String readPath = "./resources/"+fileName+".txt";
-		String writePath = "./out/"+fileName+"Result.csv";
-		String text = Analyzer.readArticle(new File(readPath));
-		Analyzer counter = new Analyzer();
-		counter.stringAnalyzer(text, dicSet.getter());
-		
-		counter.writeArticleForm(new File(writePath));
-		counter.describeString();
+		String[] fileNames = new String[] {"article1", "article2"};
+		for (String fileName : fileNames) {
+			String readPath = "./resources/"+fileName+".txt";
+			String writePath = "./out/"+fileName+"Result.csv";
+			String text = Analyzer.readArticle(new File(readPath));
+			Analyzer counter = new Analyzer();
+			counter.stringAnalyzer(text, dicSet.getter());
+
+			counter.writeArticleForm(new File(writePath));
+
+			System.out.println("=====" + fileName + "=====");
+			counter.describeString();
+			System.out.println();
+		}
 	}
 }
