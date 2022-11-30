@@ -1,4 +1,4 @@
-package org.albertryu.dictionary.utils;
+package org.albertryu.article.analyze.utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
