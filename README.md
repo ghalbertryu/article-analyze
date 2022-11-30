@@ -1,8 +1,8 @@
-# java-dictionary
+# article-analyze
 初學 java 時練習開發的工具，可以根據字典中的詞彙來分析一篇文章出現對應詞彙的次數
 
 ## Run
-org.albertryu.dictionary.DictionaryDemo#main
+org.albertryu.article.analyze.ArticleAnalyzeDemo#main
 
 Result Example
 ```
